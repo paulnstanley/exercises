@@ -1,0 +1,56 @@
+body {
+  background-color: #ddd;
+  margin: 0;
+}
+
+nav {
+  background-color: #087d8e;
+  position: fixed;
+  width: 100%;
+  top: 0;
+}
+
+nav ul {
+  margin: 0;
+  text-align: center;
+}
+
+nav li {
+  display: inline-block;
+}
+
+nav li a {
+  line-height: 50px;
+  text-decoration: none;
+  color: #fff;
+  font-size: 11px;
+  text-transform: uppercase;
+  font-weight: bold;
+  padding: 0 18px;
+  font-family: 'open sans', sans-serif;
+}
+
+li:hover {
+  background-color: blue;
+  color: black;
+  border: 1px solid black;
+}
+
+.hero-title {
+  padding-top: 300px;
+  color: #fff;
+  font-size: 50px;
+  text-align: center;
+  font-family: 'Kadwa', serif;
+}
+
+.hero {
+  background: url(https://www.projectshift.io/wp-content/uploads/2017/12/TIS4202Panorama_hdr_tonemapped2013IceFactoryATC-Scott_Faber_Photography.jpg) no-repeat center fixed;
+  background-size: cover;
+  height: 700px;
+  /* margin-bottom: 0px; */
+}
+
+/* section {
+  margin: 0px;
+} */
