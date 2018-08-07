@@ -1,0 +1,111 @@
+{
+  "name": "Mashed Potatoes",
+  "serves": 4,
+  "nutrition information": [
+    {
+      "serving count": 4,
+      "serving size": 0.5,
+      "serving unit": "cups",
+      "calories per serving": 250
+    }
+  ],
+  "ingredients": [
+    {
+      "name": "water"
+    },
+    {
+      "name": "potatoes",
+      "count": 2
+    },
+    {
+      "name": "butter",
+      "count": 2,
+      "unit": "tablespoons"
+    },
+    {
+      "name": "milk",
+      "count": 0.5,
+      "unit": "cups"
+    },
+    {
+      "name": "salt",
+      "count": 0.5,
+      "unit": "teaspoon"
+    },
+    {
+      "name": "pepper",
+      "count": 0.25,
+      "unit": "teaspoons"
+    }
+  ],
+  "directions": [
+    "Slice potatoes into half-inch thick slices.",
+    "Add potatoes to a pot and cover with an inch of water.",
+    "Bring the water to a boil over high heat, then reduce to a simmer and cover.",
+    "Simmer for 20 minutes or until potatoes are fork tender.",
+    "Drain water from potatoes, leaving the potatoes in the original pot.",
+    "Add remaining ingredients to the pot with the potatoes.",
+    "Mash potatoes until they reach the desired consistency.",
+    "Serve immediately, or cover and refrigerate."
+  ]
+}
+
+{"animals": [
+  {
+    "name": "cow",
+    "mean weight": 1650,
+    "units": "pounds",
+    "habitat": "farms",
+    "endangered": "no",
+    "diet": ["grass", "weeds", "thistles"],
+    "predators": ["humans", "bears", "mad cow disease"],
+    "deliciousness": {
+      "type": "number",
+      "minimum": 1,
+      "maximum": 5,
+      "value": 5
+    }
+  }
+  {
+    "name": "elephant",
+    "weight": 8,
+    "units": "cows",
+    "habitat": "circuses",
+    "endangered": "vulnerable",
+    "diet": [],
+    "predators": [],
+    "deliciousness": {
+      "type": "number",
+      "minimum": 1,
+      "maximum": 5
+    }
+  }
+  {
+    "name": ,
+    "weight": ,
+    "units": ,
+    "habitat": ,
+    "endangered": ,
+    "diet": [],
+    "predators": [],
+    "deliciousness": {
+      "type": "number",
+      "minimum": 1,
+      "maximum": 5
+    }
+  }
+  {
+    "name": ,
+    "weight": ,
+    "units": ,
+    "habitat": ,
+    "endangered": ,
+    "diet": [],
+    "predators": [],
+    "deliciousness": {
+      "type": "number",
+      "minimum": 1,
+      "maximum": 5
+    }
+  }
+]}
