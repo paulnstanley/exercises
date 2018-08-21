@@ -19,6 +19,10 @@ class App extends Component {
     });
   }
 
+  hidePosts() {
+    this.
+  }
+
   render() {
     return (<div className="row">
       <div className="col-md-6 col-md-offset-3">
