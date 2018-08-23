@@ -7,7 +7,11 @@ class App extends Component {
     super()
 
     this.state = {
-      posts: []
+      posts: [
+        // {text: ''},
+        // {user: ''},
+        // {upvotes: 0}
+      ]
     }
 
     this.addPost = this.addPost.bind(this)
@@ -19,9 +23,13 @@ class App extends Component {
     });
   }
 
-  hidePosts() {
-    this.
+  upvotePost(post) {
+    this.setState({})
   }
+
+  // hidePosts() {
+  //   this.
+  // }
 
   render() {
     return (<div className="row">
@@ -32,7 +40,7 @@ class App extends Component {
 
         <div className="posts"></div>
 
-        <PostsList posts={this.state.posts}/>
+        <PostsList upvotePost={this.upvotePost} posts={this.state.posts}/>
 
         <button onClick={this.hidePosts} type="button" className="btn btn-primary">Hide Posts</button>
 

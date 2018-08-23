@@ -1,9 +1,14 @@
 import React, { Component } from 'react';
 
-const Post = ({post}) => {
+const Post = (props) => {
+  const handleUpvoteClick = () => {
+    props.upvotePost(props.post)
+  }
+
   return (
     <li>
-      <span>{post.user} - {post.text}</span>
+      <span>{props.post.user} - {props.post.text}</span>
+      <button onClick={handleUpvoteClick}>upvote</button>
     </li>
   )
 }
