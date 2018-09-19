@@ -145,24 +145,54 @@ and your server is running do the following:
 ----------------------*/
 //1. Find books with fewer than 500 but more than 200 pages
 
-const findBooks = (min, max) => {
-  let foundBooks = [];
-  foundBooks.push(Book.find({pages:{ $gt: min, $lt: max }}));
-  return foundBooks;
-};
-
-console.log("Books between 200 and 500 pages: " + findBooks(200, 500));
+// Book.find({pages: { $gt: 200, $lt: 500 }}, (err, result) => {
+//   if (err) { return console.error(err); }
+//   console.log("Books between 200 and 500 pages: " + result);
+// })
 
 //2. Find books whose rating is less than 5, and sort by the author's name
 
+// Book.find({rating: { $lt: 5 }}, (err, result) => {
+//   if (err) { return console.error(err); }
+//   console.log(result.sort({author: 1}));
+// })
+
 //3. Find all the Fiction books, skip the first 2, and display only 3 of them
 
+// Book.find({genres: 'Fiction'}, (err, result) => {
+//   if (err) { return console.error(err); }
+//     for (let i=2; i<5; i++) {
+//       console.log(result[i]);
+//     }
+// })
 
 /*People
 ----------------------*/
 //1. Find all the people who are tall (>180) AND rich (>30000)
 
+// Person.find(
+//   {
+//     $and: [
+//       { height: { $gt: 180 } },
+//       { salary: { $gt: 30000 } }
+//     ]
+//   }, (err, result) => {
+//   if (err) { return console.error(err); }
+//   console.log("Tall and rich: " + result);
+// })
+
 //2. Find all the people who are tall (>180) OR rich (>30000)
+
+// Person.find(
+//   {
+//     $or: [
+//       { height: { $gt: 180 } },
+//       { salary: { $gt: 30000 } }
+//     ]
+//   }, (err, result) => {
+//   if (err) { return console.error(err); }
+//   console.log("Tall and rich: " + result);
+// })
 
 //3. Find all the people who have grey hair or eyes, and who's weight (<70)
 
